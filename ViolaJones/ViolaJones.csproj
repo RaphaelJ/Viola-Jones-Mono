@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FADB4BEF-CD39-4341-B46F-DE9E5584DD97}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ViolaJones</RootNamespace>
+    <AssemblyName>ViolaJones</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Commandlineparameters>load 2000tests_300pass</Commandlineparameters>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+    </Reference>
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+    </Reference>
+    <Reference Include="Mono.Simd" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="GreyPixbuf.cs" />
+    <Compile Include="IntegralImage.cs" />
+    <Compile Include="Window.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Features\IFeature.cs" />
+    <Compile Include="Features\TwoHorizontalRectanglesFeature.cs" />
+    <Compile Include="Primitives\Point.cs" />
+    <Compile Include="Primitives\Rectangle.cs" />
+    <Compile Include="Features\TwoVerticalRectanglesFeature.cs" />
+    <Compile Include="Features\ThreeHorizontalRectanglesFeature.cs" />
+    <Compile Include="Features\ThreeVerticalRectanglesFeature.cs" />
+    <Compile Include="Features\FourRectanglesFeature.cs" />
+    <Compile Include="Trainer\StrongClassifier.cs" />
+    <Compile Include="Trainer\WeakClassifier.cs" />
+    <Compile Include="Trainer\TestImage.cs" />
+    <Compile Include="Trainer\TestWeakClassifier.cs" />
+    <Compile Include="Detector\Detector.cs" />
+    <Compile Include="Features\Features.cs" />
+    <Compile Include="Trainer\FeatureValue.cs" />
+    <Compile Include="Trainer\FeatureValues.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Features\" />
+    <Folder Include="Primitives\" />
+    <Folder Include="Trainer\" />
+    <Folder Include="Detector\" />
+  </ItemGroup>
+</Project>

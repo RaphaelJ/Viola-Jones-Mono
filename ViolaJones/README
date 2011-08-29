@@ -1,0 +1,36 @@
+Raphael Javaux <raphaeljavaux@gmail.com>
+Décembre 2010 - Janvier 2011
+
+Ceci est une mise en oeuvre simple de la méthode de détection de visages
+créée par Paul Viola et Michael Jones.
+Le tout est écrit en C# et nécessite GTK#.
+L'exécution a seulement été vérifiée sous Linux avec Mono.
+
+- Le dossier /bin/Debug contient les binaire pour Mono ;
+- Le dossier /bin/Debug/classifieurs contient des classifieurs enregistrés ;
+- Le dossier /LearningTests contient les images de test d'apprentissage du MIT (700 au total).
+
+Utilisation :
+
+- Pour charger un classifieur :
+mono ViolaJones.exe load <chemin du classifieur>
+
+	Exemple :
+		mono ViolaJones.exe load classifieurs/3500images_200classifieurs
+
+- Pour entrainer un classifieur :
+mono --gc=sgen ViolaJones.exe train <chemin du classifieur> [ <chemin d'enregistrement du classifieur> ]
+
+	--gc=sgen active le nouveau Garbage Collector apparût avec Mono 2.8.
+	Sans cette option, l'ancien GC est utilisé (libGC) et il cause certains problèmes
+	lorsque le tas atteint environ 4Gio (il provoque une exception, prévoyant une fuite mémoire).
+	Ce problème n'existe plus avec SgenGC.
+
+	Si le chemin d'enregistrement n'est pas spécifié, le classifieur ne sera pas
+	enregistré.
+
+	L'entrainement est une tâche extrêmement gourmande en ressources.
+
+	Exemple :
+		mono --gc=sgen ViolaJones.exe train ../../LearningTests 7000_images
+

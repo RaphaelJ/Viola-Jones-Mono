@@ -1,0 +1,63 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ViolaJones/Features/Features.cs">
+    <Files>
+      <File FileName="ViolaJones/Features/Features.cs" Line="20" Column="1" />
+      <File FileName="ViolaJones/Trainer/StrongClassifier.cs" Line="24" Column="60" />
+      <File FileName="ViolaJones/Trainer/WeakClassifier.cs" Line="47" Column="14" />
+      <File FileName="ViolaJones/Window.cs" Line="114" Column="6" />
+      <File FileName="ViolaJones/Features/FourRectanglesFeature.cs" Line="70" Column="49" />
+      <File FileName="ViolaJones/IntegralImage.cs" Line="73" Column="37" />
+      <File FileName="ViolaJones/Trainer/TestImage.cs" Line="24" Column="4" />
+      <File FileName="ViolaJones/Main.cs" Line="35" Column="28" />
+      <File FileName="ViolaJones/GreyPixbuf.cs" Line="40" Column="43" />
+      <File FileName="ViolaJones/Features/IFeature.cs" Line="21" Column="48" />
+      <File FileName="ViolaJones/Trainer/TestWeakClassifier.cs" Line="41" Column="4" />
+      <File FileName="ViolaJones/Detector/Detector.cs" Line="46" Column="4" />
+      <File FileName="ViolaJones/Features/TwoHorizontalRectanglesFeature.cs" Line="19" Column="3" />
+      <File FileName="ViolaJones/Features/TwoVerticalRectanglesFeature.cs" Line="59" Column="4" />
+      <File FileName="ViolaJones/Config.cs" Line="27" Column="2" />
+      <File FileName="ViolaJones/Primitives/Rectangle.cs" Line="46" Column="17" />
+      <File FileName="ViolaJones/Trainer/FeatureValue.cs" Line="29" Column="48" />
+      <File FileName="ViolaJones/Trainer/FeatureValues.cs" Line="17" Column="4" />
+      <File FileName="ViolaJones/Features/ThreeHorizontalRectanglesFeature.cs" Line="19" Column="3" />
+      <File FileName="ViolaJones/Features/ThreeVerticalRectanglesFeature.cs" Line="23" Column="18" />
+      <File FileName="ViolaJones/Primitives/Point.cs" Line="42" Column="61" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="ViolaJones" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="Detector" expanded="True" />
+            <Node name="Features" expanded="True">
+              <Node name="Features.cs" selected="True" />
+            </Node>
+            <Node name="Primitives" expanded="True" />
+            <Node name="Trainer" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True">
+          <Node name="ViolaJones" expanded="True">
+            <Node name="ViolaJones" expanded="True">
+              <Node name="ViolaJones.Point" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>sumR1</Value>
+          <Value>sumR2</Value>
+          <Value>sumR3</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
